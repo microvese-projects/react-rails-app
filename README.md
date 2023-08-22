@@ -75,6 +75,13 @@ Then install the project's necessary dependencies with:
   bundle install
   npm install
 ```
+### To start the app
+
+Run the command below:
+
+```ssh
+  ./bin/dev
+```
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
