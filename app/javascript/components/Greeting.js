@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchMessage } from '../redux/messageReducer';
 
-function Home() {
+function Greeting() {
   const dispatch = useDispatch();
   const message = useSelector((state) => state.message);
 
@@ -18,4 +18,4 @@ function Home() {
   )
 }
 
-export default Home
+export default Greeting

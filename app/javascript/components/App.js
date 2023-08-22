@@ -3,14 +3,14 @@ import { Provider } from 'react-redux';
 import store from '../redux/store';
 
 import React from 'react';
-import Home from "./Home";
+import Greeting from "./Greeting";
 
 const App = () => {
   return (
     <Provider store={store}>
       <BrowserRouter>
         <Routes>
-          <Route exact path="/" element={<Home />} />
+          <Route exact path="/" element={<Greeting />} />
         </Routes>
       </BrowserRouter>
     </Provider>
