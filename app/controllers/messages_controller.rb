@@ -1,10 +1,9 @@
 class MessagesController < ApplicationController
   def index
-    @random_message = Message.order('RANDOM()').first
-
-    respond_to do |format|
-      format.json { render json: @random_message }
-      format.html
-    end
+  end
+  
+  def greeting
+    random_message = Message.order('RANDOM()').first
+    render json: random_message
   end
 end
