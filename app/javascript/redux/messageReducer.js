@@ -17,7 +17,7 @@ export const messageSlice = createSlice({
   extraReducers: (builder) => {
     builder
       .addCase(fetchMessage.fulfilled, (state, action) => {
-        state.value = action.payload;
+        state.message = action.payload;
       });
   },
 })
